@@ -1,36 +1,22 @@
 html {
   scroll-behavior: smooth;
 }
-body{
-  background-color: rgb(127, 216, 198);
-}
-.logo{
-  width: 70px;
-  height: 50px;
-  border-radius: 50%;
-}
 .sizer {
   width: 350px;
   height: 250px;
 }
-.navbar-nav li a{
-  color: white;
-}
 #samah {
-  background-color: #353839 !important;
-  box-shadow: 3px 3px 3px 2px rgb(22, 21, 21);
-  text-align: center;
+  background-color: #17a2b8 !important;
 }
 .red {
   background-color: red;
 }
 .blue {
-  background-color: rgb(11, 11, 12);
+  background-color: blue;
 }
 .green {
   background-color: green;
 }
-
 .colored {
   background-color: transparent !important;
 }
@@ -41,7 +27,13 @@ body{
   border-left: 4px solid #795548 !important;
   padding-left: 8px;
 }
-
+.fontcolor {
+  color: #795548 !important;
+}
+.nodecoration a {
+  color: #795548 !important;
+  text-decoration: none !important;
+}
 .transparent {
   background-color: transparent !important;
 }
@@ -87,7 +79,6 @@ body{
     border: none;
   }
 }
-
 @keyframes blinker {
   50% {
     border-color: tranparent;
@@ -102,7 +93,7 @@ body{
 }
 .css-typing p {
   border-right: 0.15em solid #795548;
-  color: #252322;
+  color: #795548;
   font-family: monospace;
   font-size: 22px;
   white-space: nowrap;
@@ -110,26 +101,26 @@ body{
   letter-spacing: 0.15em;
 }
 .css-typing p:nth-of-type(1) {
-  width: 395px;
-  animation: type 1s steps(60, end);
+  width: 375px;
+  animation: type 1s steps(40, end);
   animation-fill-mode: forwards;
 }
 .css-typing p:nth-of-type(2) {
-  width: 245px;
+  width: 205px;
   opacity: 0;
-  animation: type2 1s steps(60, end);
+  animation: type2 1s steps(40, end);
   animation-delay: 1s;
   animation-fill-mode: forwards;
 }
 .css-typing p:nth-of-type(3) {
-  width: 185px;
+  width: 175px;
   opacity: 0;
   animation: type2 1s steps(40, end);
   animation-delay: 2s;
   animation-fill-mode: forwards;
 }
 .css-typing p:nth-of-type(4) {
-  width: 155px;
+  width: 105px;
   opacity: 0;
   animation: type2 1s steps(40, end);
   animation-delay: 3s;
@@ -137,21 +128,21 @@ body{
 }
 
 .css-typing p:nth-of-type(5) {
-  width: 170px;
+  width: 150px;
   opacity: 0;
   animation: type2 1s steps(40, end);
   animation-delay: 4s;
   animation-fill-mode: forwards;
 }
 .css-typing p:nth-of-type(6) {
-  width: 160px;
+  width: 140px;
   opacity: 0;
   animation: type2 1s steps(40, end);
   animation-delay: 5s;
   animation-fill-mode: forwards;
 }
 .css-typing p:nth-of-type(7) {
-  width: 290px;
+  width: 270px;
   word-break: break-all;
   opacity: 0;
   animation: type2 1s steps(40, end);
@@ -166,7 +157,7 @@ body{
   animation-fill-mode: forwards;
 }
 .css-typing p:nth-of-type(10) {
-  width: 430px;
+  width: 360px;
   opacity: 0;
   animation: typefinal 1s steps(40, end);
   /*animation: typefinal 1s steps(40, end) , blinker 0.5s step-end infinite alternate;*/
@@ -185,9 +176,7 @@ body{
 .swing img {
   border: 5px solid #f8f8f8;
   display: block;
-  width: 90%;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-
+  width: 100%;
 }
 .swing:after {
   content: "";
@@ -299,13 +288,29 @@ body{
 }
 
 .nav-link:hover {
-  /* background-color: #795548 !important; */
-  border-left: 7px solid #aaa9a9;
-  color: #c2c2c2 !important;
-
+  background-color: #795548 !important;
+  color: #f8f9fa !important;
   border-radius: 20px;
 }
 
+/*@media only screen and (max-width: 505px) {
+  .ml-xs-mob {
+    padding-left: 60px;
+  }
+}*/
+
+/*@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1158px){
+  #first {
+   
+  }
+  #second {
+   flex: 0 0 66.666667%!important;
+    max-width: 66.666667%!important;
+    margin-left: 10px!important;
+  }
+}*/
 .pls-3 {
   float: left;
   padding-left: 10px;
@@ -324,6 +329,11 @@ body{
     color: #17a2b8;
   }
 }
+.logo{
+  width: 70px;
+  height: 50px;
+  border-radius: 50%;
+}
 #blink {
   /*text-decoration: blink;*/
   animation-name: blinker;
@@ -333,7 +343,7 @@ body{
   animation-direction: alternate;
 }
 footer {
-  background-color: #070707;
+  background-color: #138496;
   color: white;
   font-weight: bold;
   margin: 0 auto;
@@ -347,68 +357,4 @@ footer {
 
 .xyz {
   height: 300p;
-}
-
-
-/*  */
-.footer {
-  display: inline-grid;
-  grid-auto-flow: row;
-  grid-gap: 24px;
-  justify-items: center;
-  margin: auto;
-  list-style-type: none;
-  text-align: center;
-  
-}
-
-@media (min-width: 500px) {
-  .footer {
-    grid-auto-flow: column;
-  }
-}
-.centerfooter{
-  text-align: center;
-}
-.footer a {
-  color: #000;
-  text-decoration: none;
-  box-shadow: inset 0 -1px 0 hsla(0, 0%, 0%, 0.4);
-}
-
-.footer a:hover {
-  box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 0%, 0.4);
-}
-
-.footer li:last-child {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-}
-
-.footer li:hover ~ li p {
-  animation: wave-animation 0.3s infinite;
-}
-
-/* below is just for demo styling */
-
-/* div {
-  display: flex;
-  height: 100vh;
-  width: 100%;
-  background-color: #002a38;
-  line-height: 1.3;
-  font-family: Menlo, monospace;
-} */
-
-@keyframes wave-animation {
-  0%,
-  100% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: rotate(20deg);
-  }
-  75% {
-    transform: rotate(-15deg);
-  }
 }
